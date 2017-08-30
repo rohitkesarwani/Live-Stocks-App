@@ -7,7 +7,7 @@ A barebones Node.js Live Stocks App using materializecss
 Make sure you have [Node.js](http://nodejs.org/) 
 
 ```sh
-git clone git@github.com:heroku/live-stock-app.git # or clone your own fork
+git clone git@github.com:evennode/live-stock-app.git # or clone your own fork
 cd live-stock-app
 npm install
 npm start
