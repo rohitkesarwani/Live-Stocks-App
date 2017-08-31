@@ -111,12 +111,12 @@ ws.onmessage=function(event){
 
 
 function handleUpdateMessage(data) {
-
+data.forEach(([name, price]) => localStorage.setItem(name+" time","few seconds before"));
 data.forEach(([name, price]) => console.log(name+' '+price));
 data.forEach(([name, price]) => localStorage.setItem(name+" color"," white"));
 data.forEach(([name, price]) => localStorage.setItem(name+" color",(price<Number(localStorage.getItem(name)) ? "pink" : "green")));
 data.forEach(([name, price]) => localStorage.setItem(name,price));
-data.forEach(([name, price]) => localStorage.setItem(name+" time",new Date().toLocaleTimeString()));
+setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name+" time",new Date().toLocaleTimeString()));},1000)
 
 
 /*data.forEach(
