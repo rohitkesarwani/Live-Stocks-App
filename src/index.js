@@ -48,49 +48,49 @@ class Stock extends React.Component
 
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(6)}</div>
-					<div className={localStorage.getItem(localStorage.key(6)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(6)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(6))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(6)+" time")}</div>
 				</div>
 				
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(9)}</div>
-					<div className={localStorage.getItem(localStorage.key(9)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(9)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(9))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(9)+" time")}</div>
 				</div>
 
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(12)}</div>
-					<div className={localStorage.getItem(localStorage.key(12)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(12)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(12))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(12)+" time")}</div>
 				</div>
 
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(15)}</div>
-					<div className={localStorage.getItem(localStorage.key(15)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(15)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(15))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(15)+" time")}</div>
 				</div>
 	
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(18)}</div>
-					<div className={localStorage.getItem(localStorage.key(18)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(18)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(18))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(18)+" time")}</div>
 				</div>
 				
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(21)}</div>
-					<div className={localStorage.getItem(localStorage.key(21)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(21)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(21))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(21)+" time")}</div>
 				</div>
 				
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(24)}</div>
-					<div className={localStorage.getItem(localStorage.key(24)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(24)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(24))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(24)+" time")}</div>
 				</div>
 			
 				<div className="row items blue lighten-6 white-text  valign-wrap center-align">
 					<div className="col s4">{localStorage.key(27)}</div>
-					<div className={localStorage.getItem(localStorage.key(27)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(0))}</div>
+					<div className={localStorage.getItem(localStorage.key(27)+" color")+" col s4"}>{localStorage.getItem(localStorage.key(27))}</div>
 					<div className="col s4">{localStorage.getItem(localStorage.key(27)+" time")}</div>
 				</div>
 			</div>
@@ -129,7 +129,6 @@ setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name
   ReactDOM.render(<Stocks/>,document.getElementById("stocks"))
 
 }
-
 
 
 
