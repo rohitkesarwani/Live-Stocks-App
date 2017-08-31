@@ -101,7 +101,7 @@ class Stock extends React.Component
 }
 
 var ws = new WebSocket("ws:stocks.mnet.website");
-var a;
+var a,time=[];
 ws.onmessage=function(event){
 
 	a=JSON.parse(event.data);
@@ -111,12 +111,13 @@ ws.onmessage=function(event){
 
 
 function handleUpdateMessage(data) {
-data.forEach(([name, price]) => localStorage.setItem(name+" time","few seconds before"));
+data.forEach(([name, price]) => time[name]=new Date().getTime());
+data.forEach(([name, price]) => localStorage.setItem(name+" time",(new Date().getTime()-time[name]<1) ? "few seconds before" : new Date(time[name]).toLocaleTimeString()));
 data.forEach(([name, price]) => console.log(name+' '+price));
 data.forEach(([name, price]) => localStorage.setItem(name+" color"," white"));
 data.forEach(([name, price]) => localStorage.setItem(name+" color",(price<Number(localStorage.getItem(name)) ? "pink" : "green")));
 data.forEach(([name, price]) => localStorage.setItem(name,price));
-setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name+" time",new Date().toLocaleTimeString()));},1000)
+//setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name+" time",new Date().toLocaleTimeString()));},1000)
 
 
 /*data.forEach(
