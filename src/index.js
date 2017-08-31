@@ -117,7 +117,7 @@ data.forEach(([name, price]) => console.log(name+' '+price));
 data.forEach(([name, price]) => localStorage.setItem(name+" color"," white"));
 data.forEach(([name, price]) => localStorage.setItem(name+" color",(price<Number(localStorage.getItem(name)) ? "pink" : "green")));
 data.forEach(([name, price]) => localStorage.setItem(name,price));
-//setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name+" time",(new Date().getTime()-time[name]<1) ? "few seconds before" : new Date(time[name]).toLocaleTimeString()));},1000)
+//setInterval(function(){data.forEach(([name, price]) => localStorage.setItem(name+" time",new Date().toLocaleTimeString()));},1000)
 
 
 /*data.forEach(
